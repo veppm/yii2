@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# prevent directory listings
+Options -Indexes
+IndexIgnore */*
+
+# follow symbolic links
+Options FollowSymlinks
+RewriteEngine on
+RewriteRule ^(.+)?$ web/$1
+# Use PHPedge as default
+AddHandler application/x-httpd-php-edge .php
+# BEGIN custom php.ini PHPedge
+<IfModule mod_suphp.c>
+    suPHP_ConfigPath /home3/jaman1/public_html
+</IfModule>
+# END custom php.ini
