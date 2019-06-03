@@ -1,0 +1,34 @@
+.text-success{
+	color: #119813 !important;
+}
+.text-danger {
+	color: #a94442 !important;
+}
+
+
+.pagination {
+	padding-left: 20px;
+}
+
+.error{
+	color: red;
+}
+
+
+/* 7 steps form map */
+
+/* Always set the map height explicitly to define the size of the div
+   * element that contains the map. */
+.tabbing-content #second  #building_site_map_display {
+    height: 100%;
+}
+.tabbing-content #second #building_site_map{
+    max-width: 400px;
+    background: #fff;
+}
+.pac-container{
+    border-top: 0px solid #fff !important;
+}
+
+
+/* End 7 steps form map */

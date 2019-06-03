@@ -1,0 +1,1013 @@
+[15-May-2019 07:36:20 America/Chicago] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#8 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#9 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#11 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "web/user-assets/css/bootstrap.min.css.map". in /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/user-assets...', Array)
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_COOKIE' => 'PHPSESSID=1364f55c556eb84baa1ba4dd278b08bb; _csrf=f62e0a893ea0cb488123830ebc2eae7483a04de084d120828220216b46af3daca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ihBLjl4YrK3KJ7MtavE0u3zv-Lai3wun%22%3B%7D',
+    'HTTP_HOST' => 'arkotte.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+    'HTTP_X_CACHE_REQ' => '1',
+    'HTTP_X_EIG_ORIGIN' => '192.254.236.178',
+    'HTTP_X_FORWARDED_FOR' => '192.254.236.178',
+    'PATH' => '/bin:/usr/bin',
+    'PHPRC' => '/home3/jaman1/public_html',
+    'PHP_INI_SCAN_DIR' => '/opt/php71/bin/php-cgi/etc:/opt/php71/bin/php-cgi/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'XNwHxN5b8r6IQk2YbqRDawAAARI',
+    'REDIRECT_URL' => '/web/user-assets/css/bootstrap.min.css.map',
+    'REMOTE_ADDR' => '182.75.120.10',
+    'REMOTE_PORT' => '57247',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/web/user-assets/css/bootstrap.min.css.map',
+    'SCRIPT_FILENAME' => '/home3/jaman1/public_html/web/index.php',
+    'SCRIPT_NAME' => '/web/index.php',
+    'SERVER_ADDR' => '192.254.236.178',
+    'SERVER_ADMIN' => 'webmaster@arkotte.com',
+    'SERVER_NAME' => 'arkotte.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at arkotte.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'XNwHxN5b8r6IQk2YbqRDawAAARI',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1557923780.3284199237823486328125,
+    'REQUEST_TIME' => 1557923780,
+    'argv' => [],
+    'argc' => 0,
+]
+[15-May-2019 07:36:56 America/Chicago] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#8 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#9 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#11 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "web/user-assets/css/bootstrap.min.css.map". in /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/user-assets...', Array)
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_COOKIE' => 'PHPSESSID=1364f55c556eb84baa1ba4dd278b08bb; _csrf=f62e0a893ea0cb488123830ebc2eae7483a04de084d120828220216b46af3daca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ihBLjl4YrK3KJ7MtavE0u3zv-Lai3wun%22%3B%7D',
+    'HTTP_HOST' => 'arkotte.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Mobile Safari/537.36',
+    'HTTP_X_CACHE_REQ' => '1',
+    'HTTP_X_EIG_ORIGIN' => '192.254.236.178',
+    'HTTP_X_FORWARDED_FOR' => '192.254.236.178',
+    'PATH' => '/bin:/usr/bin',
+    'PHPRC' => '/home3/jaman1/public_html',
+    'PHP_INI_SCAN_DIR' => '/opt/php71/bin/php-cgi/etc:/opt/php71/bin/php-cgi/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'XNwH6GuW9EIUZ7h-BKV0GQAAABY',
+    'REDIRECT_URL' => '/web/user-assets/css/bootstrap.min.css.map',
+    'REMOTE_ADDR' => '182.75.120.10',
+    'REMOTE_PORT' => '34778',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/web/user-assets/css/bootstrap.min.css.map',
+    'SCRIPT_FILENAME' => '/home3/jaman1/public_html/web/index.php',
+    'SCRIPT_NAME' => '/web/index.php',
+    'SERVER_ADDR' => '192.254.236.178',
+    'SERVER_ADMIN' => 'webmaster@arkotte.com',
+    'SERVER_NAME' => 'arkotte.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at arkotte.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'XNwH6GuW9EIUZ7h-BKV0GQAAABY',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1557923816.260487079620361328125,
+    'REQUEST_TIME' => 1557923816,
+    'argv' => [],
+    'argc' => 0,
+]
+[15-May-2019 07:39:24 America/Chicago] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#8 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#9 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#11 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "web/user-assets/css/bootstrap.min.css.map". in /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/user-assets...', Array)
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_COOKIE' => 'PHPSESSID=1364f55c556eb84baa1ba4dd278b08bb; _csrf=f62e0a893ea0cb488123830ebc2eae7483a04de084d120828220216b46af3daca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ihBLjl4YrK3KJ7MtavE0u3zv-Lai3wun%22%3B%7D',
+    'HTTP_HOST' => 'arkotte.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+    'HTTP_X_CACHE_REQ' => '1',
+    'HTTP_X_EIG_ORIGIN' => '192.254.236.178',
+    'HTTP_X_FORWARDED_FOR' => '192.254.236.178',
+    'PATH' => '/bin:/usr/bin',
+    'PHPRC' => '/home3/jaman1/public_html',
+    'PHP_INI_SCAN_DIR' => '/opt/php71/bin/php-cgi/etc:/opt/php71/bin/php-cgi/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'XNwIfN5b8r6IQk2YbqRLLAAAARA',
+    'REDIRECT_URL' => '/web/user-assets/css/bootstrap.min.css.map',
+    'REMOTE_ADDR' => '182.75.120.10',
+    'REMOTE_PORT' => '47506',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/web/user-assets/css/bootstrap.min.css.map',
+    'SCRIPT_FILENAME' => '/home3/jaman1/public_html/web/index.php',
+    'SCRIPT_NAME' => '/web/index.php',
+    'SERVER_ADDR' => '192.254.236.178',
+    'SERVER_ADMIN' => 'webmaster@arkotte.com',
+    'SERVER_NAME' => 'arkotte.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at arkotte.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'XNwIfN5b8r6IQk2YbqRLLAAAARA',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1557923964.282392024993896484375,
+    'REQUEST_TIME' => 1557923964,
+    'argv' => [],
+    'argc' => 0,
+]
+[15-May-2019 07:40:03 America/Chicago] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#8 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#9 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#11 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "web/user-assets/css/bootstrap.min.css.map". in /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/user-assets...', Array)
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_COOKIE' => 'PHPSESSID=1364f55c556eb84baa1ba4dd278b08bb; _csrf=f62e0a893ea0cb488123830ebc2eae7483a04de084d120828220216b46af3daca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ihBLjl4YrK3KJ7MtavE0u3zv-Lai3wun%22%3B%7D',
+    'HTTP_HOST' => 'arkotte.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+    'HTTP_X_CACHE_REQ' => '1',
+    'HTTP_X_EIG_ORIGIN' => '192.254.236.178',
+    'HTTP_X_FORWARDED_FOR' => '192.254.236.178',
+    'PATH' => '/bin:/usr/bin',
+    'PHPRC' => '/home3/jaman1/public_html',
+    'PHP_INI_SCAN_DIR' => '/opt/php71/bin/php-cgi/etc:/opt/php71/bin/php-cgi/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'XNwIo95b8r6IQk2YbqRM6QAAAS4',
+    'REDIRECT_URL' => '/web/user-assets/css/bootstrap.min.css.map',
+    'REMOTE_ADDR' => '182.75.120.10',
+    'REMOTE_PORT' => '24697',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/web/user-assets/css/bootstrap.min.css.map',
+    'SCRIPT_FILENAME' => '/home3/jaman1/public_html/web/index.php',
+    'SCRIPT_NAME' => '/web/index.php',
+    'SERVER_ADDR' => '192.254.236.178',
+    'SERVER_ADMIN' => 'webmaster@arkotte.com',
+    'SERVER_NAME' => 'arkotte.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at arkotte.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'XNwIo95b8r6IQk2YbqRM6QAAAS4',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1557924003.165893077850341796875,
+    'REQUEST_TIME' => 1557924003,
+    'argv' => [],
+    'argc' => 0,
+]
+[15-May-2019 07:40:55 America/Chicago] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#8 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#9 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#11 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "web/user-assets/css/bootstrap.min.css.map". in /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/user-assets...', Array)
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_COOKIE' => 'PHPSESSID=1364f55c556eb84baa1ba4dd278b08bb; _csrf=f62e0a893ea0cb488123830ebc2eae7483a04de084d120828220216b46af3daca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ihBLjl4YrK3KJ7MtavE0u3zv-Lai3wun%22%3B%7D',
+    'HTTP_HOST' => 'arkotte.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+    'HTTP_X_CACHE_REQ' => '1',
+    'HTTP_X_EIG_ORIGIN' => '192.254.236.178',
+    'HTTP_X_FORWARDED_FOR' => '192.254.236.178',
+    'PATH' => '/bin:/usr/bin',
+    'PHPRC' => '/home3/jaman1/public_html',
+    'PHP_INI_SCAN_DIR' => '/opt/php71/bin/php-cgi/etc:/opt/php71/bin/php-cgi/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'XNwI1muW9EIUZ7h-BKV92QAAADc',
+    'REDIRECT_URL' => '/web/user-assets/css/bootstrap.min.css.map',
+    'REMOTE_ADDR' => '182.75.120.10',
+    'REMOTE_PORT' => '12422',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/web/user-assets/css/bootstrap.min.css.map',
+    'SCRIPT_FILENAME' => '/home3/jaman1/public_html/web/index.php',
+    'SCRIPT_NAME' => '/web/index.php',
+    'SERVER_ADDR' => '192.254.236.178',
+    'SERVER_ADMIN' => 'webmaster@arkotte.com',
+    'SERVER_NAME' => 'arkotte.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at arkotte.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'XNwI1muW9EIUZ7h-BKV92QAAADc',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1557924054.998488903045654296875,
+    'REQUEST_TIME' => 1557924054,
+    'argv' => [],
+    'argc' => 0,
+]
+[15-May-2019 07:40:58 America/Chicago] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#8 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#9 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#11 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "web/user-assets/css/bootstrap.min.css.map". in /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/user-assets...', Array)
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_COOKIE' => 'PHPSESSID=1364f55c556eb84baa1ba4dd278b08bb; _csrf=f62e0a893ea0cb488123830ebc2eae7483a04de084d120828220216b46af3daca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ihBLjl4YrK3KJ7MtavE0u3zv-Lai3wun%22%3B%7D',
+    'HTTP_HOST' => 'arkotte.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+    'HTTP_X_CACHE_REQ' => '1',
+    'HTTP_X_EIG_ORIGIN' => '192.254.236.178',
+    'HTTP_X_FORWARDED_FOR' => '192.254.236.178',
+    'PATH' => '/bin:/usr/bin',
+    'PHPRC' => '/home3/jaman1/public_html',
+    'PHP_INI_SCAN_DIR' => '/opt/php71/bin/php-cgi/etc:/opt/php71/bin/php-cgi/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'XNwI2nufe93DGD00Wp-URQAAAWs',
+    'REDIRECT_URL' => '/web/user-assets/css/bootstrap.min.css.map',
+    'REMOTE_ADDR' => '182.75.120.10',
+    'REMOTE_PORT' => '15992',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/web/user-assets/css/bootstrap.min.css.map',
+    'SCRIPT_FILENAME' => '/home3/jaman1/public_html/web/index.php',
+    'SCRIPT_NAME' => '/web/index.php',
+    'SERVER_ADDR' => '192.254.236.178',
+    'SERVER_ADMIN' => 'webmaster@arkotte.com',
+    'SERVER_NAME' => 'arkotte.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at arkotte.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'XNwI2nufe93DGD00Wp-URQAAAWs',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1557924058.909760951995849609375,
+    'REQUEST_TIME' => 1557924058,
+    'argv' => [],
+    'argc' => 0,
+]
+[15-May-2019 09:26:29 America/Chicago] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#8 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#9 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#11 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Unable to verify your data submission. in /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('contact', Array)
+#2 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/contact', Array)
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#5 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '235',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_COOKIE' => 'humans_21909=1; PHPSESSID=9a0859e800143ed63caa040be5cf10f3; _csrf=57c3438c65cc559457b2e2f15727acd6f2799a888d9d15ed9bcd492411ad6cfda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IP5LOPcEGoVk8OWh0Y6u02sxMIyI_s0W%22%3B%7D',
+    'HTTP_HOST' => 'arkotte.com',
+    'HTTP_ORIGIN' => 'http://arkotte.com',
+    'HTTP_REFERER' => 'http://arkotte.com/site/contact',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+    'HTTP_X_FORWARDED_FOR' => '192.254.236.178',
+    'PATH' => '/bin:/usr/bin',
+    'PHPRC' => '/home3/jaman1/public_html',
+    'PHP_INI_SCAN_DIR' => '/opt/php71/bin/php-cgi/etc:/opt/php71/bin/php-cgi/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'XNwhlYkFa3avvJBfiodaAAAAADU',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'XNwhlYkFa3avvJBfiodaAAAAADU',
+    'REDIRECT_URL' => '/web/site/contact',
+    'REMOTE_ADDR' => '182.75.120.10',
+    'REMOTE_PORT' => '15754',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/contact',
+    'SCRIPT_FILENAME' => '/home3/jaman1/public_html/web/index.php',
+    'SCRIPT_NAME' => '/web/index.php',
+    'SERVER_ADDR' => '192.254.236.178',
+    'SERVER_ADMIN' => 'webmaster@arkotte.com',
+    'SERVER_NAME' => 'arkotte.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at arkotte.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'XNwhlYkFa3avvJBfiodaAAAAADU',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1557930389.7967441082000732421875,
+    'REQUEST_TIME' => 1557930389,
+    'argv' => [],
+    'argc' => 0,
+]
+[15-May-2019 09:28:35 America/Chicago] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#8 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#9 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#11 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Unable to verify your data submission. in /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('contact', Array)
+#2 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/contact', Array)
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#5 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '235',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_COOKIE' => 'humans_21909=1; PHPSESSID=9a0859e800143ed63caa040be5cf10f3; _csrf=57c3438c65cc559457b2e2f15727acd6f2799a888d9d15ed9bcd492411ad6cfda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IP5LOPcEGoVk8OWh0Y6u02sxMIyI_s0W%22%3B%7D',
+    'HTTP_HOST' => 'arkotte.com',
+    'HTTP_ORIGIN' => 'http://arkotte.com',
+    'HTTP_REFERER' => 'http://arkotte.com/site/contact',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+    'HTTP_X_FORWARDED_FOR' => '192.254.236.178',
+    'PATH' => '/bin:/usr/bin',
+    'PHPRC' => '/home3/jaman1/public_html',
+    'PHP_INI_SCAN_DIR' => '/opt/php71/bin/php-cgi/etc:/opt/php71/bin/php-cgi/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'XNwiEy1K8nT1qs2Y0bH0MwAAAKI',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'XNwiEy1K8nT1qs2Y0bH0MwAAAKI',
+    'REDIRECT_URL' => '/web/site/contact',
+    'REMOTE_ADDR' => '182.75.120.10',
+    'REMOTE_PORT' => '25290',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/contact',
+    'SCRIPT_FILENAME' => '/home3/jaman1/public_html/web/index.php',
+    'SCRIPT_NAME' => '/web/index.php',
+    'SERVER_ADDR' => '192.254.236.178',
+    'SERVER_ADMIN' => 'webmaster@arkotte.com',
+    'SERVER_NAME' => 'arkotte.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at arkotte.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'XNwiEy1K8nT1qs2Y0bH0MwAAAKI',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1557930515.4170119762420654296875,
+    'REQUEST_TIME' => 1557930515,
+    'argv' => [],
+    'argc' => 0,
+]
+[15-May-2019 09:28:49 America/Chicago] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#8 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#9 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#11 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Unable to verify your data submission. in /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('contact', Array)
+#2 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/contact', Array)
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#5 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '235',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_COOKIE' => 'humans_21909=1; PHPSESSID=9a0859e800143ed63caa040be5cf10f3; _csrf=57c3438c65cc559457b2e2f15727acd6f2799a888d9d15ed9bcd492411ad6cfda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IP5LOPcEGoVk8OWh0Y6u02sxMIyI_s0W%22%3B%7D',
+    'HTTP_HOST' => 'arkotte.com',
+    'HTTP_ORIGIN' => 'http://arkotte.com',
+    'HTTP_REFERER' => 'http://arkotte.com/site/contact',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+    'HTTP_X_FORWARDED_FOR' => '192.254.236.178',
+    'PATH' => '/bin:/usr/bin',
+    'PHPRC' => '/home3/jaman1/public_html',
+    'PHP_INI_SCAN_DIR' => '/opt/php71/bin/php-cgi/etc:/opt/php71/bin/php-cgi/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'XNwiIRk1LbQo5qz2coDyLgAAAYM',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'XNwiIRk1LbQo5qz2coDyLgAAAYM',
+    'REDIRECT_URL' => '/web/site/contact',
+    'REMOTE_ADDR' => '182.75.120.10',
+    'REMOTE_PORT' => '25984',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/contact',
+    'SCRIPT_FILENAME' => '/home3/jaman1/public_html/web/index.php',
+    'SCRIPT_NAME' => '/web/index.php',
+    'SERVER_ADDR' => '192.254.236.178',
+    'SERVER_ADMIN' => 'webmaster@arkotte.com',
+    'SERVER_NAME' => 'arkotte.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at arkotte.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'XNwiIRk1LbQo5qz2coDyLgAAAYM',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1557930529.8680779933929443359375,
+    'REQUEST_TIME' => 1557930529,
+    'argv' => [],
+    'argc' => 0,
+]
+[15-May-2019 09:28:53 America/Chicago] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#8 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#9 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#11 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Unable to verify your data submission. in /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('contact', Array)
+#2 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/contact', Array)
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#5 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '235',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_COOKIE' => 'humans_21909=1; PHPSESSID=9a0859e800143ed63caa040be5cf10f3; _csrf=57c3438c65cc559457b2e2f15727acd6f2799a888d9d15ed9bcd492411ad6cfda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IP5LOPcEGoVk8OWh0Y6u02sxMIyI_s0W%22%3B%7D',
+    'HTTP_HOST' => 'arkotte.com',
+    'HTTP_ORIGIN' => 'http://arkotte.com',
+    'HTTP_REFERER' => 'http://arkotte.com/site/contact',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+    'HTTP_X_FORWARDED_FOR' => '192.254.236.178',
+    'PATH' => '/bin:/usr/bin',
+    'PHPRC' => '/home3/jaman1/public_html',
+    'PHP_INI_SCAN_DIR' => '/opt/php71/bin/php-cgi/etc:/opt/php71/bin/php-cgi/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'XNwiJS1K8nT1qs2Y0bH1DwAAAHo',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'XNwiJS1K8nT1qs2Y0bH1DwAAAHo',
+    'REDIRECT_URL' => '/web/site/contact',
+    'REMOTE_ADDR' => '182.75.120.10',
+    'REMOTE_PORT' => '26198',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/contact',
+    'SCRIPT_FILENAME' => '/home3/jaman1/public_html/web/index.php',
+    'SCRIPT_NAME' => '/web/index.php',
+    'SERVER_ADDR' => '192.254.236.178',
+    'SERVER_ADMIN' => 'webmaster@arkotte.com',
+    'SERVER_NAME' => 'arkotte.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at arkotte.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'XNwiJS1K8nT1qs2Y0bH1DwAAAHo',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1557930533.83399105072021484375,
+    'REQUEST_TIME' => 1557930533,
+    'argv' => [],
+    'argc' => 0,
+]
+[15-May-2019 09:29:24 America/Chicago] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#8 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#9 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#11 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Unable to verify your data submission. in /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('contact', Array)
+#2 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/contact', Array)
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#5 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '235',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_COOKIE' => 'humans_21909=1; PHPSESSID=9a0859e800143ed63caa040be5cf10f3; _csrf=57c3438c65cc559457b2e2f15727acd6f2799a888d9d15ed9bcd492411ad6cfda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IP5LOPcEGoVk8OWh0Y6u02sxMIyI_s0W%22%3B%7D',
+    'HTTP_HOST' => 'arkotte.com',
+    'HTTP_ORIGIN' => 'http://arkotte.com',
+    'HTTP_REFERER' => 'http://arkotte.com/site/contact',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+    'HTTP_X_FORWARDED_FOR' => '192.254.236.178',
+    'PATH' => '/bin:/usr/bin',
+    'PHPRC' => '/home3/jaman1/public_html',
+    'PHP_INI_SCAN_DIR' => '/opt/php71/bin/php-cgi/etc:/opt/php71/bin/php-cgi/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'XNwiRC1K8nT1qs2Y0bH4LQAAALY',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'XNwiRC1K8nT1qs2Y0bH4LQAAALY',
+    'REDIRECT_URL' => '/web/site/contact',
+    'REMOTE_ADDR' => '182.75.120.10',
+    'REMOTE_PORT' => '29288',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/contact',
+    'SCRIPT_FILENAME' => '/home3/jaman1/public_html/web/index.php',
+    'SCRIPT_NAME' => '/web/index.php',
+    'SERVER_ADDR' => '192.254.236.178',
+    'SERVER_ADMIN' => 'webmaster@arkotte.com',
+    'SERVER_NAME' => 'arkotte.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at arkotte.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'XNwiRC1K8nT1qs2Y0bH4LQAAALY',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1557930564.3798389434814453125,
+    'REQUEST_TIME' => 1557930564,
+    'argv' => [],
+    'argc' => 0,
+]
+[15-May-2019 09:31:58 America/Chicago] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#8 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#9 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\BadRequestHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\BadRequestHttpException))
+#11 {main}
+Previous exception:
+yii\web\BadRequestHttpException: Unable to verify your data submission. in /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('contact', Array)
+#2 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/contact', Array)
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#5 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '235',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_CACHE_CONTROL' => 'no-cache',
+    'HTTP_COOKIE' => 'humans_21909=1; PHPSESSID=9a0859e800143ed63caa040be5cf10f3; _csrf=57c3438c65cc559457b2e2f15727acd6f2799a888d9d15ed9bcd492411ad6cfda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IP5LOPcEGoVk8OWh0Y6u02sxMIyI_s0W%22%3B%7D',
+    'HTTP_HOST' => 'arkotte.com',
+    'HTTP_ORIGIN' => 'http://arkotte.com',
+    'HTTP_PRAGMA' => 'no-cache',
+    'HTTP_REFERER' => 'http://arkotte.com/site/contact',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+    'HTTP_X_FORWARDED_FOR' => '192.254.236.178',
+    'PATH' => '/bin:/usr/bin',
+    'PHPRC' => '/home3/jaman1/public_html',
+    'PHP_INI_SCAN_DIR' => '/opt/php71/bin/php-cgi/etc:/opt/php71/bin/php-cgi/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'XNwi3aTZbz4OoniIgYc0aQAAAPs',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'XNwi3aTZbz4OoniIgYc0aQAAAPs',
+    'REDIRECT_URL' => '/web/site/contact',
+    'REMOTE_ADDR' => '182.75.120.10',
+    'REMOTE_PORT' => '43910',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/site/contact',
+    'SCRIPT_FILENAME' => '/home3/jaman1/public_html/web/index.php',
+    'SCRIPT_NAME' => '/web/index.php',
+    'SERVER_ADDR' => '192.254.236.178',
+    'SERVER_ADMIN' => 'webmaster@arkotte.com',
+    'SERVER_NAME' => 'arkotte.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at arkotte.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'XNwi3aTZbz4OoniIgYc0aQAAAPs',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1557930717.9471490383148193359375,
+    'REQUEST_TIME' => 1557930717,
+    'argv' => [],
+    'argc' => 0,
+]
+[15-May-2019 09:48:01 America/Chicago] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#8 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#9 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#11 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "web/user-assets/css/bootstrap.min.css.map". in /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/user-assets...', Array)
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_COOKIE' => 'PHPSESSID=9a0859e800143ed63caa040be5cf10f3; _csrf=57c3438c65cc559457b2e2f15727acd6f2799a888d9d15ed9bcd492411ad6cfda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IP5LOPcEGoVk8OWh0Y6u02sxMIyI_s0W%22%3B%7D',
+    'HTTP_HOST' => 'arkotte.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+    'HTTP_X_CACHE_REQ' => '1',
+    'HTTP_X_EIG_ORIGIN' => '192.254.236.178',
+    'HTTP_X_FORWARDED_FOR' => '192.254.236.178',
+    'PATH' => '/bin:/usr/bin',
+    'PHPRC' => '/home3/jaman1/public_html',
+    'PHP_INI_SCAN_DIR' => '/opt/php71/bin/php-cgi/etc:/opt/php71/bin/php-cgi/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'XNwmockuy4p672Gg55dIOQAAAJg',
+    'REDIRECT_URL' => '/web/user-assets/css/bootstrap.min.css.map',
+    'REMOTE_ADDR' => '182.75.120.10',
+    'REMOTE_PORT' => '40718',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/web/user-assets/css/bootstrap.min.css.map',
+    'SCRIPT_FILENAME' => '/home3/jaman1/public_html/web/index.php',
+    'SCRIPT_NAME' => '/web/index.php',
+    'SERVER_ADDR' => '192.254.236.178',
+    'SERVER_ADMIN' => 'webmaster@arkotte.com',
+    'SERVER_NAME' => 'arkotte.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at arkotte.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'XNwmockuy4p672Gg55dIOQAAAJg',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1557931681.6076068878173828125,
+    'REQUEST_TIME' => 1557931681,
+    'argv' => [],
+    'argc' => 0,
+]
+[15-May-2019 09:48:59 America/Chicago] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php:158
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#6 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#8 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#9 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#11 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "web/user-assets/css/bootstrap.min.css.map". in /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('web/user-assets...', Array)
+#1 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home3/jaman1/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home3/jaman1/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home3/jaman1/public_html/web/index.php(12): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home3/jaman1/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_COOKIE' => 'PHPSESSID=9a0859e800143ed63caa040be5cf10f3; _csrf=57c3438c65cc559457b2e2f15727acd6f2799a888d9d15ed9bcd492411ad6cfda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IP5LOPcEGoVk8OWh0Y6u02sxMIyI_s0W%22%3B%7D',
+    'HTTP_HOST' => 'arkotte.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+    'HTTP_X_CACHE_REQ' => '1',
+    'HTTP_X_EIG_ORIGIN' => '192.254.236.178',
+    'HTTP_X_FORWARDED_FOR' => '192.254.236.178',
+    'PATH' => '/bin:/usr/bin',
+    'PHPRC' => '/home3/jaman1/public_html',
+    'PHP_INI_SCAN_DIR' => '/opt/php71/bin/php-cgi/etc:/opt/php71/bin/php-cgi/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'XNwm28kuy4p672Gg55dM0gAAAJY',
+    'REDIRECT_URL' => '/web/user-assets/css/bootstrap.min.css.map',
+    'REMOTE_ADDR' => '182.75.120.10',
+    'REMOTE_PORT' => '42779',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/web/user-assets/css/bootstrap.min.css.map',
+    'SCRIPT_FILENAME' => '/home3/jaman1/public_html/web/index.php',
+    'SCRIPT_NAME' => '/web/index.php',
+    'SERVER_ADDR' => '192.254.236.178',
+    'SERVER_ADMIN' => 'webmaster@arkotte.com',
+    'SERVER_NAME' => 'arkotte.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '<address>Apache Server at arkotte.com Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'America/Chicago',
+    'UNIQUE_ID' => 'XNwm28kuy4p672Gg55dM0gAAAJY',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1557931739.62020397186279296875,
+    'REQUEST_TIME' => 1557931739,
+    'argv' => [],
+    'argc' => 0,
+]

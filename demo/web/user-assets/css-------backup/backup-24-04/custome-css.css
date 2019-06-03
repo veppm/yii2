@@ -1,0 +1,488 @@
+.multi-page{
+	padding: 100px !important;
+	margin-right: 0px;
+	margin-left:0px;
+}
+
+/*.user_form .row{
+	margin-right: 0px;
+	margin-left:0px;
+}
+*/
+
+input:checked + div:before{
+	content: no-close-quote !important;
+}
+/*.radio_bottom .checkbox, .radio {
+    padding-left: 30px;
+}*/
+
+#contest_form .btn{
+    padding-left: 30px;
+}
+.contest{
+	padding:50px;
+}
+
+.control-label {
+	padding-bottom:5px;
+}
+
+#w0{
+	display:none !important;
+}
+
+.user_db_detail_4{
+	padding: 20px 5px 0px 5px;
+}
+
+
+/*Dashboard*/
+.user_content1 .db_box2 h3{
+	padding-bottom: 0px !important; 
+}
+
+.user_content1 .db_incontent1{
+	border-bottom: 0px solid #ededed;
+}
+
+/*main layout*/
+.custom-alert-padding{
+	padding-top: 10px;
+    width: 60%;
+    margin: auto;
+}
+
+/*user profile*/
+.profile_section .user_db_img .user_img{
+	max-height:200px;
+}
+.my-dashboard a{
+	text-decoration: none;
+	color: #000;
+}
+.user_content .db_box1 .db_incontent2, .profile_section .user_content1 .dp_para{
+	color: #888179 !important;
+	
+}
+
+/* ============== 7 setps form ==============*/
+
+.h2_heading h3, .guarantee-option p {
+    color: #797574;
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.other-textbox{
+	border: solid 2px #6b6a68;
+    width: 94.5%;
+    height: 175px !important;
+    border-radius: 40px;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 10px;
+    font-family: Arial,Helvetica,sans-serif;
+    color: #11100e;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: #fffefc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio input:checked ~ .about_situation, 
+.radio input:checked ~ .about_family,
+.radio input:checked ~ .beds_no,
+.radio input:checked ~ .bathrooms_no,
+.radio input:checked ~ .approximate_budjet,
+.radio input:checked ~ .looking_build,
+.radio input:checked ~ .land_other_size,
+.radio input:checked ~ .promote_contest
+
+{
+	background-color: #98b000 !important;
+}
+
+.user_form{
+	padding-bottom: 60px;
+}
+
+
+/*
+.box__dragndrop,
+.box__uploading,
+.box__success,
+.box__error {
+  display: none;
+}
+
+.box.has-advanced-upload {
+  background-color: white;
+  outline: 2px dashed black;
+  outline-offset: -10px;
+}
+.box.has-advanced-upload .box__dragndrop {
+  display: inline;
+}
+
+.box.is-dragover {
+  background-color: grey;
+}*/
+.user_form .box__input{
+    font-size: 1.25rem;
+    position: relative;
+    padding: 100px 20px;
+    width: 96%;
+    outline: 2px dashed #6b6a68;
+}
+.user_form .box__input .box__file{
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10000;
+    padding: 86px 453px;
+}
+.user_form .box__input .box__file + label{
+	max-width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    margin-left: 38%;
+}
+/*
+.guarantee-option{
+	padding-top:40px; 
+}*/
+.guarantee-option p{
+	padding-bottom:10px;
+}
+/* colored_box_6_step */
+.colored_box {
+    /*position: relative;*/
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 60px;
+}
+.colored_box .col-md-4{
+	padding-left:0px;
+}
+.colored_box .box_1 p {
+    font-size: 20px;
+    color: #323228;
+    padding-top: 40px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.colored_box .box_1 h2{
+	font-size: 32px;
+    color: #787370;
+    max-width: 300px;
+    line-height: 41px;
+    font-weight: 700;
+    letter-spacing: 2px;
+	
+}
+.colored_box .box_2 p{
+   font-size: 20px;
+   color: #323228;
+    padding-top: 40px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.colored_box .box_2 h2{
+	font-size: 32px;
+    color: #787370;
+    max-width: 300px;
+    line-height: 41px;
+    font-weight: 700;
+    letter-spacing: 2px;
+	
+}
+.colored_box .box_1 {
+   max-width: 534px;
+    width: 100%;
+    min-height: 620px;
+    border-radius: 15px;
+    background-color: #f1c4a3;
+    padding-top: 80px;
+    padding-left: 60px;
+}
+.colored_box .box_2 {
+    max-width: 950px;
+    width: 100%;
+    min-height: 620px;
+    border-radius: 15px;
+    background-color: #f5a975;
+	padding-top: 80px;
+    padding-left: 60px;
+}
+
+/* colored_box_6_step_end */
+/* media */
+@media screen and (max-width:1366px){
+	.main_header_insp .dashboard_banner_content {
+    left: 30%;
+}
+	
+}
+
+.radio_bottom{
+	padding-left:15px; 
+}
+.radio_bottom input:checked + div{
+	background-color: #98b000;
+    color: #000;
+}
+.radio_bottom_indicator {
+	position: absolute;
+    top: -1px;
+    left: -15px;
+    height: 30px;
+    width: 30px;
+    background: #fff;
+    border-radius: 50px;
+    border: 1px solid #000;
+}
+
+.radio_bottom input{
+	position: absolute;
+    z-index: 10000;
+    opacity: 0;
+}
+
+.radio_bottom .control {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    color: #97b100;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+
+
+
+/*paymnent_page*/
+.summary-head {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #4e4c4b;
+    letter-spacing: 2px;
+	
+    
+}
+
+.payment_para .para_1 {
+    /* border: solid; */
+    font-size: 35px;
+    color: #787475;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.payment_para .para_2 {
+    /* border: solid; */
+    font-size: 35px;
+    color: #787475;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.payment_heading .payment_para .para_1
+{
+    padding-top: 40px;
+   font-size: 35px;
+    color: #787475;
+    font-weight: 800;
+    letter-spacing: 2px; 
+}
+.payment_heading .payment_para .para_2
+{
+    padding-top: 40px;
+   font-size: 35px;
+    color: #787475;
+    font-weight: 800;
+    letter-spacing: 2px; 
+}
+.payment_heading .payment_para{
+    border-bottom:1px
+}
+.payment_heading1 .payment_para1 .para_1
+{
+    padding-top: 40px;
+    font-size: 35px;
+    color: #787475;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding-bottom: 60px;
+}
+.payment_heading1 .payment_para1 .para_2
+{
+    padding-top: 40px;
+   font-size: 35px;
+    color: #787475;
+    font-weight: 800;
+    letter-spacing: 2px; 
+}
+.payment_section{
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.payment_para1 {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #f1f1f1;
+}
+/*paymnent_page-end*/
+
+
+/*contact details*/
+.contact_details{
+	padding-top: 60px;
+}
+.contact_details label{
+	font-size: 30px;
+    font-weight: 600;
+    color: #9a9897;
+    font-family: -webkit-body;
+    padding-bottom: 25px;
+}
+
+.contact_details .phone-text{
+	padding-top: 60px;
+}
+	
+.contact_details input[type=text]{
+	border: solid 2px #6b6a68;
+	padding:10px;
+    line-height: 75px;
+    height: 83px;
+    border-radius: 40px;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 10px;
+    font-family: Arial,Helvetica,sans-serif;
+    color: #11100e;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: #fffefc;
+    width: 100%;
+}
+
+
+.about_arkotte {
+	padding-top: 60px;
+}
+
+	
+.and_finally h2{
+	font-size: 30px;
+    font-weight: 800;
+    color: #4e4c4b;
+    letter-spacing: 2px;
+}
+    
+.radio_finally{
+	padding-left:15px; 
+}
+
+.radio_finally .about{
+    font-size: 30px;
+    color: #a9a9b1;
+    padding-bottom: 60px;
+    font-weight: 600;
+    font-family: initial
+}
+
+.radio_finally input:checked + div{
+	background-color: #a9a9a9;
+    color: #000;
+}
+.radio_finally .radio_bottom_indicator {
+	position: absolute;
+    top: 1px;
+    left: -7px;
+    height: 25px;
+    width: 25px;
+    background: #fff;
+    border-radius: 50px;
+    border: 2px solid #a9a9a9;
+}
+
+
+
+.radio_finally input{
+	position: absolute;
+    z-index: 10000;
+    opacity: 0;
+}
+
+.radio_finally .control {
+	display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #a9a9a9;
+    font-size: 25px;
+    font-family: initial;
+    font-weight: 600;
+}
+
+
+/*error summary */
+.error-summary{
+	margin: auto;
+    width: 30%;
+    line-height: 25px;
+    color: red;
+    border: 1px dotted;
+    padding: 20px;
+
+}
+.costing_section .search_section{
+    padding-left: 60px;
+}
+.contest_pagination{
+    text-align: center;
+}
+.contest_pagination .pagination .active{
+    border: 0px solid !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
